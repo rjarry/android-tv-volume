@@ -1,0 +1,5 @@
+<!-- SPDX-License-Identifier: MIT -->
+<!-- Copyright (c) 2026 Robin Jarry -->
+<resources>
+	<string name="accessibility_description">Adjusts global audio gain from the volume keys captured by the finevold daemon.</string>
+</resources>

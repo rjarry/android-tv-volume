@@ -1,0 +1,5 @@
+/.gradle/
+/build/
+/app/build/
+/daemon/finevold
+/app/src/main/jniLibs/

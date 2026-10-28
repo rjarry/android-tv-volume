@@ -1,0 +1,28 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 Robin Jarry
+
+plugins {
+	id 'com.android.application'
+}
+
+android {
+	namespace 'cc.jarry.finevolume'
+	compileSdk 35
+
+	defaultConfig {
+		applicationId 'cc.jarry.finevolume'
+		minSdk 28
+		targetSdk 34
+		versionCode 1
+		versionName '0.1'
+	}
+
+	// The daemon ships as a native library so that installing the app is
+	// enough to deploy it. Legacy packaging extracts it to nativeLibraryDir,
+	// where the adb shell can read it.
+	packaging {
+		jniLibs {
+			useLegacyPackaging = true
+		}
+	}
+}
